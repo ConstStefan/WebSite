@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Acasă</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+    <body>
+        <% const str = undefined; %>
+        <% const result=str ? name.length : 0; %>
+        <h1 id="title">Bun venit la siteul nostru cu alimente  
+        <% if(locals.session.loggedin) {%> 
+             <%= name%><% } %>!</h1>
+        <nav>
+            <a href="/autentificare">Autentificare</a>
+        </br>
+            <a href="/chestionar">Chestionar</a>
+    </br>
+    <a href="/vizualizare-cos">Cos</a>
+        </nav>
+        <form class="formindex" action="/creare-bd" method="post">
+            <button type="submit">Creare BD</button>
+        </form>
+        <form class="formindex" action="/inserarebd" method="post">
+            <button type="submit">Încarcare BD</button>
+        </form>
+        <h2>Produse:</h2>
+     
+        <% if (produse && produse.length > 0) { %>
+        <% for (let i = 0; i < produse.length; i++) { %>
+            <div class="produs">
+              <h2><%= produse[i].nume %></h2>
+              <img src="/img/<%= produse[i].imagine %>" alt="<%= produse[i].nume %>">
+              <p>Pret: <%= produse[i].pret %> lei</p>
+              <% if (session.loggedin) { %>
+                <form action="/adaugare_cos" method="POST">
+                  <input type="hidden" name="produsId" value="<%= produse[i].id %>">
+                  <button type="submit">Adaugă în coș</button>
+                </form>
+              <% } %>
+            </div>
+          <% } %>
+          <% } else { %>
+            <li>Nu există produse disponibile în acest moment.</li>
+        <% } %>
+        
+    </body>
+</html>

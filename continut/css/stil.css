@@ -1,0 +1,325 @@
+
+
+.navbar {
+    list-style-type: none;
+    right:0;
+    top:0;
+    float:right;
+      
+    position:absolute;
+    align-self: baseline;
+    justify-self: baseline;
+    
+  }
+footer{
+  background-color: rgb(55, 55, 55);
+  padding:100px 25%;
+  color:white;
+  font-family: 'Poppins',sans-serif;
+  
+  margin-bottom:-10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  display:flex;
+  border-top:3px solid #fef847;
+  border-left:3px solid #fef847;
+  border-right:3px solid #fef847;
+  
+
+}
+.col-1 a{
+  display:block;
+  text-decoration: none;
+  color:white;
+  margin-bottom:10px;
+  
+}
+.col-3{
+  flex-grow:2;
+}
+footer div{
+  text-align: center;
+
+}
+footer div h3{
+  font-weight:300;
+  margin-bottom:30px;
+  letter-spacing: 1px;
+}
+
+  
+
+  
+  /* Change the link color to #111 (black) on hover */
+  .navbar a:hover:not(.active) {
+    background-color: #000000;
+    opacity: 0.2;
+    
+  }
+  .active {
+    background-color: #353535;
+    
+  }
+
+  .navbar a{
+    font-size: 20px;
+    margin:0;
+    float: left;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 252, 252);
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+
+  }
+  .title{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 150px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:rgb(255, 255, 255);
+    border-color:black 3px solid;
+  }
+ .container{
+  background-image: url('../imagini/teren2.jpg');
+  background-size: cover;
+  margin:-23px -8px;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+  #sporturimage{
+    background-image: url('../imagini/sporturi.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%; 
+    position:absolute;
+    filter:blur(2px);
+    z-index: -10;
+    margin:-8px -10px;
+
+    
+  }
+  
+  
+ 
+ .text{
+  padding-top: 50px;
+  padding-left: 20px;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+ }
+ #sectiune1{
+  margin-top:60px;
+  text-align: center;
+  background-image: url('../imagini/tenis.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 102%;
+  height: 1000px;
+  margin-left:-20px;
+  
+  margin-bottom:0px;
+  
+  filter:contrast(1);
+  padding-top: 300px;
+  
+
+ }
+ #sectiune2{
+  margin-left: -5px;
+  padding-top: 60px;
+
+ }
+ #sectiune3{
+  background-color:rgba(202, 202, 202, 0.468) ;
+  
+  border: 1px solid;
+  padding: 10px;  
+  box-shadow: 5px 10px 8px 5px #888888;
+  margin:auto;
+  margin-top: 70px;
+  width: 60%;
+ }
+ #b1{
+  background-color: rgb(165, 157, 0);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%; 
+  position:absolute;
+ }
+ #rtClock{
+  font-size:5vw;
+  font-weight: bold;
+  text-align: center;
+  color:white;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 5px;
+
+ }
+ #clock{
+  font-size:5vw;
+  color:white;
+  position:absolute;
+  width:100%;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+
+ }
+ .text-invatS1{
+  color:white;
+  text-align: center;
+ }
+#canvas{
+  cursor:crosshair;
+  border:4px solid;
+  border-color:black;
+  align-self: center;
+  background-color: white;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+ 
+  
+
+}
+#section2{
+  padding-bottom: 100px;
+  padding-top:20px;
+  width:100%;
+}
+#myCol {
+  background:green;
+}
+
+td {
+  padding:15px;
+  border:2px solid black;
+
+}
+table thead td {
+	background-color: #54585d;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	border: 3px solid #54585d;
+}
+table tbody td {
+	color: #636363;
+	border: 1px solid #000000;
+  
+}
+table tbody tr {
+	background-color: #f9fafb;
+}
+#tabelInvat{
+  
+  border:1px solid black;
+  align-self: center;
+  margin-left:auto;
+  margin-right:auto; 
+  
+  
+}
+.s3Pozitie{
+  align-self: center;
+  text-align: center;
+  align-items: center;
+}
+.button-3{
+  width: 90px;
+  padding:10px;
+}
+.sidenav{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgb(55, 55, 55);
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+.sidenav a{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.desen{
+  
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-self: center;
+  display: block;
+  padding-top: 100px;
+  
+  
+}
+textPath{
+  font-size:18px;
+  letter-spacing: 30px;
+  font-family: 'Roboto',sans-serif;
+
+}
+
+.bgDesen{
+  background-color:rgba(113, 106, 3, 0.51);
+  width: 101.5%;
+  height: 100%;
+  margin-left:-10px;
+  margin-top:-10px;
+  
+  
+}
+.dreptunghi{
+  text-align: center;
+}
+#cumparaturi{
+  padding:100px;
+  text-align: center;
+  
+  
+}
+.invatMain{
+  background-color: aqua;
+}
+#verifica{
+  
+  text-align: center;
+  padding:500px;
+;
+  
+}
+#lista{
+  align-self: center;
+  margin:auto;
+  padding-bottom: 300px;
+}
+
+

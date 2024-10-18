@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Autentificare</title>
+        <style>
+            body{
+                background-image:url('autentificare.jpg');
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Autentificare</h1>
+        <form action="/verificare-autentificare" method="post">
+        <fieldset id="log">
+            <% const str = undefined; %>
+            <% const result=str ? name.length : 0; %>
+            <% if(result==0) {%> 
+                <h1 id="err"><%= error%></h1>
+            <% } %>
+            <label for="username">Nume de utilizator</label>
+            <input type="text" id="username" name="username"/><br/>
+            <label for="pass">Parola</label>
+            <input type="password" id="pass" name="pass"/><br/>
+            <input type="submit" id="login" value="Intră"/>
+        </fieldset>
+        </form>
+    </body>
+</html>

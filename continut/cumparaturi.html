@@ -1,0 +1,25 @@
+           <style>
+            body{
+                background-color: rgb(89, 181, 112);
+            }
+           </style>
+           <section id="cumparaturi">
+                <div style="padding-top: 30vh;">
+                    <h1>Cumparaturi</h1>
+                    <label for="produs" style="padding:50px; margin-left:-200px; font-weight: bold;">Nume produs</label>
+                    <label for="cantitate" style="font-weight: bold;">Cantitate</label><br/>
+                    <input type="text" placeholder="Nume Produs" id="produs"/>
+                    
+                    <input type="text" placeholder="Cantitate" id="cantitate"/>
+            
+                    <button class="button-3" role="button" style="margin: 0 auto;" onclick="addProduct(document.getElementById('produs').value,document.getElementById('cantitate').value)">Adauga</button>
+                    <table id="lista"  style="margin-top: 8vh;">
+                        <tr>
+                            <th>Nr.</th>
+                            <th>Nume</th>
+                            <th>Cantitate</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            

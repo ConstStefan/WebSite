@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alimente</title>
+        <link rel="stylesheet" type="text/css" href="/stil.css"/>
+    </head>
+    <body>
+        <%if (locals.session.loggedin) { %>
+            <aside>
+                <form action="/logout">
+                    <p class="text1">Utilizator:</p>
+                    <p id="logged"> <%= locals.session.username%></p>
+                    <button type="submit" id="lo">Deconectare</button>
+                </form>
+            </aside>
+        <%}%>      
+        <%- body %>
+    </body>
+</html>

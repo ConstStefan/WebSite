@@ -1,0 +1,73 @@
+
+        <style>
+             body{
+                background-image: url(./imagini/inregistreaza.jpg);
+                background-repeat: no-repeat;
+                background-size: cover; 
+                
+                
+                
+            }
+            .textInregistreaza{    
+            line-height: 30px;
+            text-align: center;
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            
+            }
+        </style>
+        
+    
+        <div id="sectiune3">
+        
+        <div class="textInregistreaza">
+        <form>
+            <p style="padding-top: 10px;">Pentru a primi informatii cat mai actuale din lumea sportului abonati-va la newsletterul nostru:</p>
+            <label for="username">Nume utilizator:</label>
+            <input type="text" id="username" name="username"><br/>
+            <label for="fname">Nume:</label>
+            <input type="text" id="fname" name="fname"><br/>
+            <label for="lname">Prenume:</label>
+            <input type="text" id="lname" name="lname"><br/>
+            <label for="pwd">Parola:</label>
+            <input type="password" id="pwd" name="pwd"><br/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br/>
+            <label for="phone">Nr. telefon:</label>
+            <input type="'tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br/>
+            <p>Informatii personale:</p>
+            <label for="sex">Sexul:</label>
+            <select id="sex" name="sex">
+                <option value="1">Masculin</option>
+                <option value="2">Feminin</option>
+            </select><br/>
+            
+            <label for="sport">Sportul preferat:</label>
+            <input list="sporturi" name="sport" id="sport">
+            <datalist id="sporturi">
+                <option value="Fotbal"></option>
+                <option value="Baschet"></option>
+                <option value="Tenis"></option>
+            </datalist><br/>
+            <label for="birthday">Data nasterii:</label>
+            <input type="date" id="birthday" name="birthday"><br/>
+            <label for="varsta">Varsta:</label>
+            <input type="range" id="varsta" name="varsta" min="18" max="100"><br/>
+            <label for="page">Site-ul sportiv preferat:</label>
+            <input type="url" id="page" name="page"><br/>
+            <label for="desc">Descriere:</label>
+    
+            <textarea id="desc" name="desc" rows="4" cols="50">  
+            </textarea><br/>
+    
+            <input type="checkbox" id="check" name="check">
+            <label for="check">Sunt de acord cu conditiile</label><br/>
+            <button type="button" disabled>Inregistreaza</button>
+
+
+        
+    
+            </form>
+        </div>  
+    </div> 
+    

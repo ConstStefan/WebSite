@@ -1,0 +1,91 @@
+        <style>
+            body{
+                background-color: rgb(8, 212, 130);
+            }
+        </style>
+   
+        
+        <aside class="sidenav">
+            
+                
+                <a href="#sectiune1">Sectiunea 1</a></li>
+                <a href="#section2">Sectiunea 2</a></li>
+                <a href="#section3">Sectiunea 3</a></li>
+    
+        </aside>
+        <section id="sectiune1" >
+            
+           <div class="text-invatS1">
+           <h1 style="font-weight: bold;">INFO:</h1>
+           <p id="date"></p>
+           <p id="url"></p>
+           <p id="browser"> </p>
+           <p id="pozitie"></p>
+           </div> 
+           <h1 id="rtClock">REAL TIME CLOCK</h1>
+           <p id="clock"></p>
+           
+           
+        </section>
+        <section id="section2" onload="pozitii()">
+            <h1 class="text-invatS1">DESEN:</h1>
+            <div class="dreptunghi">
+            <label for="conturCol">Selectati culoarea conturului: </label>
+            <input type="color" id="stroke" name="culoare1" value="#e66465"><br/>
+            <label for="">Selectati culoarea dreptunghiului: </label>
+            <input type="color" id="fill" name="culoare2" value="#f6b73c">
+            </div>  
+            <canvas id="canvas" width ="1000" height="500" onclick="draw()">
+            </canvas>
+        </section>
+        <section id="section3">
+            <h1 class="text-invatS1">Cei mai mari jucatori de tenis din toate timpurile:</h1>
+            <table id="tabelInvat">  
+                <thead>
+                <tr id="trInvat">
+                    <td>Nume</td>
+                    <td>Prenume</td>
+                    <td>Nationalitate</td>
+                    <td>Grand Slam-uri</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Djokovic</td>
+                    <td>Novak</td>
+                    <td>Serbia</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Nadal</td>
+                    <td>Rafael</td>
+                    <td>Spain</th>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Federer</td>
+                    <td>Roger</td>
+                    <td>Switzerland</td>
+                    <td>20</td>
+                </tr>
+              
+                </tbody>
+            </table>
+            <br/>
+
+             <div class="s3Pozitie">
+                <input type="text" id="nume" placeholder="Numele">
+                <input type="text" id="prenume" placeholder="Prenumele">
+                <input type="text" id="tara" placeholder="Country">
+                <input type="number" id="gs" placeholder="Titluri Grand Slam"><br/><br/>
+                <input type="text" placeholder="Pozitie"  id="position"/>
+                <input type="color" id="culoareTabel" name="culoareTabel" value="#e66465" placeholder="Culoarea preferata"><br/><br/>
+                <button class="button-3" onclick="addLinie()">Adauga linie</button>
+            </div>
+        <br/>
+        <br/>
+
+        
+        </section>
+        
+        

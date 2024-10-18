@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+
+
+<persoane>
+ <persoana id="1">
+ <nume>Popescu</nume>
+ <prenume>Ion</prenume>
+ <varsta>23</varsta>
+ <ocupatie>IT</ocupatie>
+ <adresa>
+    <strada>Sperantei</strada>
+    <numar>50</numar>
+    <localitate>Iasi</localitate>
+    <judet>Iasi</judet>
+    <tara>Romania</tara>
+    
+
+ </adresa>
+ </persoana>
+
+
+<persoana id="2">
+ <nume>Andrei</nume>
+ <prenume>Ion</prenume>
+ <varsta>20</varsta>
+ <ocupatie>IT</ocupatie>
+ <adresa>
+    <strada>Ion Caragiale</strada>
+    <numar>40</numar>
+    <localitate>Iasi</localitate>
+    <judet>Iasi</judet>
+    <tara>Romania</tara>
+
+
+ </adresa>
+ </persoana>
+
+
+<persoana id="3">
+ <nume>Stefan</nume>
+ <prenume>Stefan</prenume>
+ <varsta>21</varsta>
+ <ocupatie>Chimist</ocupatie>
+ <adresa>
+    <strada>Mihai Eminescu</strada>
+    <numar>10</numar>
+    <localitate>Bucuresti</localitate>
+    <judet>Ilfov</judet>
+    <tara>Romania</tara>
+
+
+ </adresa>
+ </persoana>
+
+
+ <persoana id="4">
+ <nume>Gheorghe</nume>
+ <prenume>Vasilescu</prenume>
+ <varsta>45</varsta>
+ <ocupatie>Fizician</ocupatie>
+ <adresa>
+    <strada>Strugurilor</strada>
+    <numar>49</numar>
+    <localitate>Botosani</localitate>
+    <judet>Botosani</judet>
+    <tara>Romania</tara>
+
+
+ </adresa>
+ </persoana>
+
+
+ <persoana id="5">
+ <nume>Fundueanu</nume>
+ <prenume>Constantin</prenume>
+ <varsta>21</varsta>
+ <ocupatie>Profesor</ocupatie>
+ <adresa>
+    <strada>Lalelelor</strada>
+    <numar>89</numar>
+    <localitate>Iasi</localitate>
+    <judet>Iasi</judet>
+    <tara>Romania</tara>
+
+
+ </adresa>
+ </persoana>
+
+</persoane>

@@ -1,0 +1,9 @@
+[{ "utilizator": "stefan",
+    "nume":"Fundueanu",
+    "prenume":"Stefan", 
+    "parola": "stefan"},
+
+{ "utilizator": "portocale",
+    "nume":"Bogdan",
+    "prenume":"Ion", 
+    "parola": "portocale"}]

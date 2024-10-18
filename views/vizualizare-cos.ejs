@@ -1,0 +1,104 @@
+<!-- vizualizare-cos.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vizualizare Coș</title>
+    <style>
+       
+  body{
+    background-image: url('cart3.jpg');
+    background-position: center;
+    background-size:1080px 1080px;
+    background-color: bisque;
+  }
+  .tot{
+    padding-top: 0px;
+  }
+  .cos-container {
+  
+
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.cos-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cos-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+.cos-item .cos-details {
+  flex-grow: 1;
+}
+
+.cos-item h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cos-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+.cos-item a {
+  color: red;
+  text-decoration: none;
+}
+
+.cos-item a:hover {
+  text-decoration: underline;
+}
+
+
+
+    </style>
+</head>
+<body>
+  <div class="tot">
+  <div class="cos-container">
+    <h1>Coșul tău de cumpărături</h1>
+  
+    <% if (produse.length > 0) { %>
+      <ul class="cos-list">
+        <% produse.forEach(function(produs) { %>
+          <li class="cos-item">
+            <div class="cos-details">
+              <h2><%= produs.nume %></h2>
+              <p>Pret: <%= produs.pret %> RON</p>
+            </div>
+          </li>
+        <% }); %>
+      </ul>
+    <% } else { %>
+      <p>Coșul tău de cumpărături este gol.</p>
+    <% } %>
+
+    <a href="/">Înapoi la Pagina Principală</a>
+  </div>
+  </div>  
+
+</body>
+</html>
